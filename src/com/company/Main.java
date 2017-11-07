@@ -7,7 +7,6 @@ public class Main {
     public static final String STR_TEXT = "Съешь ещё этих мягких французских булок, да выпей же чаю";
 
     public static void main(String[] args) {
-
         System.out.println("Часть 1");
         outRandomRowsInt(20, 1, 100);
         System.out.println("\nЧасть 2");
@@ -15,7 +14,7 @@ public class Main {
         System.out.println("\nЧасть 3");
         outStringFromSpace(STR_TEXT);
         System.out.println("\nРабота завершена");
-       }
+    }
 
     static void outRandomRowsInt (int count, int min, int max) {
         Random rand = new Random();
@@ -26,8 +25,8 @@ public class Main {
             if (i != count) {
                 System.out.print(" ");
             }
-            else System.out.println("}");
         }
+        System.out.println("}");
     }
 
     static void outRandomCol (int count, int min, int max) {
